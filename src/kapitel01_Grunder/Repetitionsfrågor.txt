@@ -1,0 +1,21 @@
+Sid 22 i boken:
+
+RF1.1:
+Kompilering är processen då datorn omvandlar den av programmeraren skrivna källkoden till bytekod.
+Ibland blir det kompileringsfel, det är då källkoden inte uppfyller språkets syntax.
+Ett exempel på kompileringsfel är då det saknas ett ; i slutet av en sats/instruktion.
+
+RF1.2:
+Interpretering är ...
+
+RF1.3:
+
+RF1.4:
+
+RF1.5:
+
+RF1.6:
+
+RF1.7:
+
+RF1.8:
