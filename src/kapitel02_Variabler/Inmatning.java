@@ -4,7 +4,8 @@ import java.util.Scanner;  // Denna rad krävs då vi ska använda klassen Scann
 public class Inmatning {
 
     // Denna variabel är static vilket innebär att den kan användas från hela klassen
-    static Scanner scan = new Scanner(System.in); // För att i Java få input från användaren kan ett Scanner-objekt användas
+    static Scanner scan = new Scanner(System.in);
+    // För att i Java få input från användaren kan ett Scanner-objekt användas
 
     public static void main(String[] args) {
         inmatningAvSträng();

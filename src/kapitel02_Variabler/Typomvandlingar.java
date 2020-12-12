@@ -32,7 +32,6 @@ public class Typomvandlingar {
         int fem = 5;
         double femSomDouble = fem; // femSomDouble kommer nu få värdet 5.0
 
-
         // Från double till String:
         double minDouble = 2.71828;
         String taletESomString = String.valueOf(minDouble);     // "2.71828"
