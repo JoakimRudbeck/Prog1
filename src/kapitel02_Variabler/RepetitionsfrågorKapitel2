@@ -1,0 +1,14 @@
+2.1
+a) int minInt;
+
+b) short minShort = 5;
+
+c) float minFloat = 3.3f;
+
+d) double minDouble = 9.9;
+
+e) char mittTecken = 'T';
+    alternativt
+    char mittTecken = (char) 84;
+
+

@@ -1,0 +1,14 @@
+Uppgift:
+
+Skriv ett program som frågar efter hur många favoritblommor du har:
+
+Programmet ska spara dessa blommor i en lista String[].
+
+Programmet ska skriva ut alla blommor.
+
+Programmet ska avslutningsvis skriva ut alla blommor som består av ett jämnt
+antal tecken.
+
+ex:
+"Liljekonvalj" innehåller 12 tecken --> ska skrivas ut.
+"Ros" innehåller 3 tecken --> ska inte skrivas ut.
