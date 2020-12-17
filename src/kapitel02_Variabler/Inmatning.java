@@ -27,4 +27,12 @@ public class Inmatning {
         int ålder = Integer.valueOf(ålderAsString);       // Typomvandling från String till int med hjälpklassen Integer.
         System.out.println("Du är " + ålder + " år gammal.");
     }
+
+    static void inmatningAvHeltalVersion2() {
+        System.out.println("Hur gammal är du?");
+        int ålder = scan.nextInt();
+        scan.nextLine();  // Läser bort enterslaget som kom efter inten som skrevs in.
+        System.out.println("Du är " + ålder + " år gammal.");
+    }
+
 }
