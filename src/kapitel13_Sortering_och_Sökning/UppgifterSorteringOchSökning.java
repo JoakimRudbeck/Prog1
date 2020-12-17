@@ -4,25 +4,35 @@ import java.util.Scanner;
 
 public class UppgifterSorteringOchSökning {
 
+    static Scanner scan = new Scanner(System.in);
+
     public static void main(String[] args) {
-        ovning1();
+        sorteraTal();
     }
 
-    static void ovning1(){
-        // Skapa scanner
-        Scanner scan = new Scanner(System.in);
+    static void sorteraTal(){
         int antalTal = 11;
+        int[] osorteradLista = ElvaTal(antalTal);
+        // sortera listan:
+        int[] sorteradLista = bubbelSortera(osorteradLista);
+
+        skrivUtVärdenILista(sorteradLista);
+    }
+
+    private static void skrivUtVärdenILista(int[] osorteradLista) {
+        // Skriv ut varje värde i den sorterade listan.
+        for(int i = 0; i < osorteradLista.length; i++){
+            System.out.println(osorteradLista[i]);
+        }
+    }
+
+    private static int[] ElvaTal(int antalTal) {
         int[] osorteradLista = new int[antalTal];
         // Läs in 11 tal i en lista:
         for(int i = 0; i < osorteradLista.length; i++){
             osorteradLista[i] = scan.nextInt();
         }
-        // sortera listan:
-        int[] sorteradLista = bubbelSortera(osorteradLista);
-        // Skriv ut varje värde i den sorterade listan.
-        for(int i = 0; i < osorteradLista.length; i++){
-            System.out.println(osorteradLista[i]);
-        }
+        return osorteradLista;
     }
 
 
@@ -37,6 +47,5 @@ public class UppgifterSorteringOchSökning {
             }
         }
         return lista;
-
     }
 }
