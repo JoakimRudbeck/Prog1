@@ -3,15 +3,19 @@ package Annat;
 public class Tidavläsning {
 
     public static void main(String[] args) {
-        /*
-            För att beräkna hur lång tid det tar för datorn att utföra en viss kodsnutt
-            kan man i pseudokod göra såhär:
+        tidAvläsning();
+    }
 
-            Spara tiden som förflutit sedan 1 jan 1970 i en variabel av typen long, kalla den startTid t.ex.
-            Exekvera den kod som du vill beräkna tiden för.
-            Spara tiden som förflutit sedan 1 jan 1970 i en variabel av typen long, kalla den slutTid t.ex.
-            Beräkna skillanden mellan slutTid och startTid.
-         */
+    private static void tidAvläsning() {
+    /*
+        För att beräkna hur lång tid det tar för datorn att utföra en viss kodsnutt
+        kan man i pseudokod göra såhär:
+
+        Spara tiden som förflutit sedan 1 jan 1970 i en variabel av typen long, kalla den startTid t.ex.
+        Exekvera den kod som du vill beräkna tiden för.
+        Spara tiden som förflutit sedan 1 jan 1970 i en variabel av typen long, kalla den slutTid t.ex.
+        Beräkna skillanden mellan slutTid och startTid.
+     */
 
         // Kodexempel:
         long startTid = System.currentTimeMillis(); // motsvarar tiden i millisekunder sedan 1 jan 1970.

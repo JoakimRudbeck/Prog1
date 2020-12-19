@@ -1,9 +1,8 @@
 package Annat;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
+import java.net.URL;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class LäsningOchSkrivning {
@@ -16,22 +15,31 @@ public class LäsningOchSkrivning {
     }
 
     static void skrivTilFil() throws IOException {
-        FileWriter myWriter = new FileWriter("src\\Filhantering\\skrivfil.txt");
+        String filnamn = "writeFile.txt";
+        String path = "src/Annat/" + filnamn;
+        FileWriter myWriter = new FileWriter(path);
         System.out.println("Vad vill du skriva till filen?");
         String dataTillFil = scanner.nextLine();
         myWriter.write(dataTillFil);
         myWriter.close();
-        System.out.println("Skrev + " + dataTillFil + " till fil.");
+        System.out.println("Skrev " + dataTillFil + " till filen " + path);
     }
 
-    static void läsningFrånFil() throws FileNotFoundException {
-        File file =  new File("src\\Filhantering\\läsfil.txt");
-        Scanner reader = new Scanner(file);
-        System.out.println("Innehållet i filen:");
-        while(reader.hasNextLine()) {
-            String n = reader.nextLine();
-            System.out.println(n);
+    static void läsningFrånFil() throws IOException {
+        String filnamn = "readFile.txt";
+        String path = "src/Annat/" + filnamn;
+        BufferedReader reader = new BufferedReader(new FileReader(path));
+        System.out.println("Innehållet i filen " + path + ":");
+        while(true){
+            String rad = reader.readLine();
+            if(rad == null){
+                break;
+            }
+            System.out.println(rad);
         }
+        System.out.println();
+        reader.close();
     }
+
 }
 

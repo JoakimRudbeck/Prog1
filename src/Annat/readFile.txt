@@ -1,0 +1,2 @@
+innehåll i läsfil.txt, rad1
+innehåll i läsfil.txt, rad2
