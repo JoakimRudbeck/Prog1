@@ -12,6 +12,13 @@ public class Busschauffören {
 
     static void busschafför(){
 
+        /*
+        Skriv ett program som frågar efter hur många passagerare det är på bussen.
+        Programmet ska sedan fråga varje passagerare vad vederbörande heter.
+        Alla dessa namnen på passageraren ska sparas i ett fält String[].
+        Programmet ska sedan skriva ut alla passagerare vars namn har ett s i sig.
+         */
+
         // Fråga hur många passagerare som finns på bussen
         System.out.println("Hur många passagerare finns på bussen?");
         int antalPassagerare = Integer.valueOf(scanner.nextLine());
