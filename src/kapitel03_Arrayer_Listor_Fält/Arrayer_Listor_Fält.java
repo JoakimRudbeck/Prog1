@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Arrayer_Listor_Fält {
 
+    static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args){
         skapaEnListaExempel();
         skrivaUtVärdenIEnLista();
@@ -39,6 +41,48 @@ public class Arrayer_Listor_Fält {
 
         // Version 2:
             int[] enListaAvTreTal = {5,7,9}; // Ett enklare sätt är att göra såhär.
+    }
+
+    static void bytPlatsPåOrdIMening() {
+    /*
+    SKRIV ETT PROGRAM DÄR ANVÄNDAREN SKRIVER IN EN MENING OCH SEDAN SKA PROGRAMMET BYTA PLATS
+    PÅ FÖRSTA OCH SISTA ORDET I MENINGEN
+
+    T.ex. "hej på dig" --> "dig på hej"
+
+    Vad behöver vi för att lösa detta??
+
+    split()
+
+    * En Scanner
+
+    substring.
+
+    fält[]*/
+
+        System.out.println("Skriv in en mening tack:");
+
+        String mening = scanner.nextLine(); // "hej på dig" --> {"hej", "på", "dig"}
+
+        String[] orden = mening.split(" ");
+
+        System.out.println("Antal ord i meningen:" + orden.length);
+
+        System.out.println("Alla ord i meningen innan bytet:");
+        System.out.println(orden[0]);
+        System.out.println(orden[1]);
+        System.out.println(orden[2]);
+        // byta plats på och sista ordet:
+
+        String temp = orden[0]; // {"hej", "på", "dig"}
+        orden[0] = orden[2];    // {"dig", "på", "dig"}
+        orden[2] = temp;        // {"dig", "på", "hej"}
+
+
+        System.out.println("Alla ord i meningen efter bytet:");
+        System.out.println(orden[0]);
+        System.out.println(orden[1]);
+        System.out.println(orden[2]);
     }
 
     static void skrivaUtVärdenIEnLista() {

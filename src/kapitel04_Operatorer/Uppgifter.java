@@ -11,6 +11,17 @@ public class Uppgifter {
         uppgift4_6();
         uppgift4_7();
         utmaning();
+        printFExempel();
+    }
+
+    static void printFExempel() {
+        float a = 3.1415927f;
+        int b = 5;
+        int c = 7;
+        // "vanliga sättet":
+        System.out.println("a är "+a+" och b är "+b+" och c är "+c+".");
+        // Samma sak men med print format:
+        System.out.printf("a är %.2f och b är %d och c är %d.", a,b,c);
     }
 
     static void uppgift4_2() {
