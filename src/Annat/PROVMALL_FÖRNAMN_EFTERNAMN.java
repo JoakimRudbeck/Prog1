@@ -11,13 +11,13 @@ public class PROVMALL_FÖRNAMN_EFTERNAMN{
     =============================================
                 ### BETYGSGRÄNSER ###
 
-                TOTALT: 18   POÄNG
+                TOTALT:     POÄNG
 
-                    E:  6    POÄNG
-                    D:  8    POÄNG
-                    C:  10   POÄNG
-                    B:  12.5 POÄNG
-                    A:  15   POÄNG
+                    E:      POÄNG
+                    D:      POÄNG
+                    C:      POÄNG
+                    B:      POÄNG
+                    A:      POÄNG
 
     ============================================
     */
