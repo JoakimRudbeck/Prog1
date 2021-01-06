@@ -8,6 +8,10 @@ import static java.lang.Integer.parseInt;
 public class Meritvärde {
 
     public static void main(String[] args) {
+        meritvärdesProgram();
+    }
+
+    private static void meritvärdesProgram() {
         System.out.println("Välkommen till programmet som beräknar ditt meritvärde!");
         System.out.println("Vad heter du?");
         Scanner scanner = new Scanner(System.in);
@@ -28,7 +32,7 @@ public class Meritvärde {
         for(String kurs : kurser.keySet()){
             System.out.println(kurs + ", " + kurser.get(kurs));
         }
-        System.out.printf("Meritvärde baserat på dina %d kurser är %.2f", antalKurser, merit);
+        System.out.printf("Annat.Meritvärde baserat på dina %d kurser är %.2f", antalKurser, merit);
     }
 
     private static double getMerit(int antalKurser, HashMap<String, Character> kurser) {
