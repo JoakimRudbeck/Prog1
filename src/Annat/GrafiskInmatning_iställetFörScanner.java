@@ -2,7 +2,7 @@ package Annat;
 
 import javax.swing.*;
 
-public class GrafiskInmatning {
+public class GrafiskInmatning_iställetFörScanner {
 
     public static void main(String[] args) {
         String minuter, kostnad;
