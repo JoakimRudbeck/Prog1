@@ -1,4 +1,4 @@
-package Annat;
+package Annat.Filhantering;
 
 import java.io.*;
 import java.net.URL;

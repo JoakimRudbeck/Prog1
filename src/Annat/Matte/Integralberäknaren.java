@@ -1,4 +1,4 @@
-package Annat;
+package Annat.Matte;
 
 import java.util.Scanner;
 
