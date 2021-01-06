@@ -7,21 +7,11 @@ public class Villkorsoperatorn {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        villkorsoperatorn();
-        villkorsOperatornExempel();
+        exempel();
+        sammaExempelFastMedVillkorsoperatorn();
     }
 
-    private static void villkorsoperatorn() {
-        int tal = scanner.nextInt();
-        boolean jämnt = tal % 2 == 0;
-        String uddaEllerJämnt = jämnt ? "jämnt" : "udda";
-        System.out.println(tal + " är " + uddaEllerJämnt);
-
-        String värde = tal > 10 ? "värdet är större än 10" : "värdet är mindre än 10";
-        System.out.println(värde);
-    }
-
-    static void villkorsOperatornExempel() {
+    private static void exempel() {
         // Fråga om ett tal.
 
         // Om talet är jämnt och större än 10, skriv ut "jämnt och tvåsiffrigt"
@@ -52,5 +42,15 @@ public class Villkorsoperatorn {
             }
         }
         System.out.println(meddelande);
+    }
+
+    private static void sammaExempelFastMedVillkorsoperatorn() {
+        int tal = scanner.nextInt();
+        boolean jämnt = tal % 2 == 0;
+        String uddaEllerJämnt = jämnt ? "jämnt" : "udda";
+        System.out.println(tal + " är " + uddaEllerJämnt);
+
+        String värde = tal > 10 ? "värdet är större än 10" : "värdet är mindre än 10";
+        System.out.println(värde);
     }
 }

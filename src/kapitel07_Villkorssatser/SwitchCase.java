@@ -7,37 +7,9 @@ public class SwitchCase {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-
-        String namn = "Joakim";
-        System.out.println("Vad heter du?");
-        String namnInput = scanner.nextLine();
-        System.out.println("Du heter " + namnInput);
-
-        if(namn.equals(namnInput)){
-            System.out.println("Du heter samma som läraren");
-        }
-        else{
-            System.out.println("Du heter inte samma som läraren");
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //humörMedIf();
-        //humörMedSwitchCase();
+       humörMedIf();
+       humörMedSwitchCase();
+       humörMedVillkorsoperatorn();
     }
 
     static void humörMedIf() {
@@ -76,6 +48,13 @@ public class SwitchCase {
                 break;
         }
         System.out.println("Denna rad körs efter switch-case");
+    }
+
+    private static void humörMedVillkorsoperatorn() {
+        System.out.println("Hur mår du idag?");
+        String humör = scanner.nextLine();
+        String utskrift = humör.equals("Bra") ? ":)" : humör.equals("Super") ? ":D" : humör.equals("Dåligt") ? ":(" : "Jag kan inte tyda ditt humör";
+        System.out.println(utskrift);
     }
 
 }
