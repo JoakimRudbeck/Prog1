@@ -32,5 +32,5 @@
 #### * Fylla ett fält med hjälp av en loop
 
 ### Kap9
-#### * Skapa en metod med given signatur, t.ex. static int summanAv(int A, int B)
+#### * Skapa en metod med given signatur. T.ex. static int summanAv(int A, int B)
 #### * Anropa en metod och ta tillvara på svaret. T.ex. int summa = summanAv(5,3);
