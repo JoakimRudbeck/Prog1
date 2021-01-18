@@ -23,9 +23,14 @@
 #### * Bygga upp villkor med &&, ||, <, <=, >, >=, == och !
 #### * Skapa en if-sats som baserat på ett villkor gör antingen det ena eller det andra.
 #### * Skapa en if- else if- else-sats.
-#### * Använda switch-sats.
+#### * Använda switch-case-sats.
 
 ### Kap8:
 #### * Skapa en for-loop som skriver ut en viss sekvens av nummer, t.ex. 2 4 6 8 10 12 14 16 18 20
 #### * Skapa en while-loop som gör samma sak som ovan.
 #### * Skapa en for-loop som använder sig av continue och break.
+#### * Fylla ett fält med hjälp av en loop
+
+### Kap9
+#### * Skapa en metod med given signatur, t.ex. static int summanAv(int A, int B)
+#### * Anropa en metod och ta tillvara på svaret. T.ex. int summa = summanAv(5,3);
