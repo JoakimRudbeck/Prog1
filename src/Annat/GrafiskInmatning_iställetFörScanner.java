@@ -5,22 +5,30 @@ import javax.swing.*;
 public class GrafiskInmatning_iställetFörScanner {
 
     public static void main(String[] args) {
-        String minuter, kostnad;
-        int minuter2;
-        double kostnad2, pris;
+        inmatningPopUpRutaExempel();
+    }
 
-        minuter = JOptionPane.showInputDialog(null, "Hur manga minuter ringer du per manad?");
-        minuter2 = Integer.parseInt(minuter);
+    private static void inmatningPopUpRutaExempel() {
+        // Popupruta där användaren kan skriva in något som en sträng
+        String namn = JOptionPane.showInputDialog(null, "Namn?");
+        // Popupruta som skriver ut något
+        JOptionPane.showMessageDialog(null,"Du heter " + namn);
+        // Popupruta som har knapparna ja (0), nej (1), cancel (2)
+        int val = JOptionPane.showConfirmDialog(null, "Avsluta?");
 
-        kostnad = JOptionPane.showInputDialog(null, "Hur mycket kostar det per minut?");
-        kostnad2 = Double.parseDouble(kostnad);
-        if (minuter2 > 1000)
-            kostnad2 = kostnad2 * 0.90;
-
-        pris = kostnad2 * minuter2;
-
-        JOptionPane.showMessageDialog(null, "Du betalar " + pris + " kr varje manad");
-
+        switch(val){
+            // ja
+            case 0:
+                System.exit(0);
+                break;
+            // nej
+            case 1:
+                inmatningPopUpRutaExempel();
+                break;
+                // cancel
+            case 2:
+                break;
+        }
     }
 
 }
