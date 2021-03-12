@@ -1,4 +1,4 @@
-package kapitel09_Metoder;
+package problemlösning;
 
 public class GöraEnRomb {
 
