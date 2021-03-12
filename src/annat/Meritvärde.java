@@ -1,4 +1,4 @@
-package Annat;
+package annat;
 
 import java.util.HashMap;
 import java.util.Scanner;
@@ -31,7 +31,7 @@ public class Meritvärde {
         for(String kurs : kurser.keySet()){
             System.out.println(kurs + ", " + kurser.get(kurs));
         }
-        System.out.printf("Annat.Meritvärde baserat på dina %d kurser är %.2f", antalKurser, merit);
+        System.out.printf("Meritvärde baserat på dina %d kurser är %.2f", antalKurser, merit);
     }
 
     private static double getMerit(int antalKurser, HashMap<String, Character> kurser) {

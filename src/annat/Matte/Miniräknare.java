@@ -1,8 +1,8 @@
-package Annat.Matte;
+package annat.Matte;
 
 import java.util.Scanner;
 
-public class MINIRÄKNARE {
+public class Miniräknare {
 
     static Scanner scan = new Scanner(System.in);
 

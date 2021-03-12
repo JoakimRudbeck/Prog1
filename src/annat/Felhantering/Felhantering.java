@@ -1,4 +1,4 @@
-package Annat.Felhantering;
+package annat.Felhantering;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

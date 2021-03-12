@@ -1,4 +1,4 @@
-package Annat;
+package annat;
 
 import javax.swing.*;
 

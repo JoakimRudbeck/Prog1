@@ -1,8 +1,7 @@
-package Annat;
+package annat;
 
 public class X_MAS
 {
-
     static int wait1 = 700;
     static int wait2 = 90;
     static int wait3 = 100;

@@ -1,12 +1,12 @@
-package Annat;
+package annat;
 
 import static java.lang.Thread.sleep;
 
 public class CountDown {
 
-    private static final int MINUTER_KVAR = 10;
+    private static final int MINUTER_KVAR = 6*60;
     private static final int TALBAS = 2; // funkar med 2, 8, 10, 16
-    private static String MEDDELANDE = "Tid kvar av rasten: ";
+    private static String MEDDELANDE = "Tid kvar av passet: ";
     private static String SLUT_MEDDELANDE = "Nu är rasten slut";
 
     public static void main(String[] args) throws InterruptedException {
