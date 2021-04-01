@@ -1,4 +1,4 @@
-package kapitel09_Metoder;
+package problemlösning;
 
 public class DagarKvarTill {
     static int dagarFrånNyårTIllMidsommar = 31+28+31+30+31+21;

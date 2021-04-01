@@ -1,4 +1,4 @@
-package kapitel09_Metoder;
+package problemlösning;
 
 import java.util.Scanner;
 
@@ -7,9 +7,8 @@ public class BeräknaAreaOchVolymMeny {
     static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.println(fakultet(7));
         boolean kör = true;
-        while(kör == true){
+        while(kör){
             int val = introduceraAnvändaren();
             switch (val){
                 case 1:
@@ -21,11 +20,21 @@ public class BeräknaAreaOchVolymMeny {
                     cylinderVolym();
                     break;
                 case 3:
+                    fakultet();
+                    break;
+                case 4:
                     kör = false;
                     break;
             }
         }
         System.out.println("Tack för idag.");
+    }
+
+    private static void fakultet() {
+        System.out.println("Ange ett positivt heltal:");
+        int n = Integer.valueOf(scan.nextLine());
+        int nFakultet = fakultet(n);
+        System.out.println(n + " fakultet = " + n + "! = " + nFakultet);
     }
 
     static int fakultet(int tal){
@@ -42,7 +51,8 @@ public class BeräknaAreaOchVolymMeny {
         System.out.println("Vad vill du göra?");
         System.out.println("[1]\tBeräkna area av cirkel");
         System.out.println("[2]\tBeräkna volym av cylinder");
-        System.out.println("[3]\tAvsluta");
+        System.out.println("[3]\tBeräkna fakultet (!)");
+        System.out.println("[4]\tAvsluta");
         int val = Integer.valueOf(scan.nextLine());
         return val;
 

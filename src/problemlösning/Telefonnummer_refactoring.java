@@ -1,5 +1,6 @@
 package problemlösning;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Telefonnummer_refactoring {

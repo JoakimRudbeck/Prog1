@@ -1,8 +1,12 @@
 package problemlösning;
 
-public class GöraEnRomb {
+public class RitaRomb {
 
     public static void main(String[] args) {
+        romb();
+    }
+
+    private static void romb() {
         int bredd = 14;
         int höjd = 22;
         char tecken = '#';
@@ -22,10 +26,11 @@ public class GöraEnRomb {
 
 
         En enkel pseudokod för denna utskrift:
-            // för varje rad:
-        //          skriv ut mellanslag
-        //          skriv ut erfoderligt antal *
-        //          gör ett enterslag!
+
+        för varje rad:
+                  skriv ut mellanslag
+                  skriv ut erfoderligt antal *
+                  gör ett enter-slag!
 
          */
     }
