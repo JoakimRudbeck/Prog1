@@ -1,5 +1,7 @@
 package kapitel13_Sortering_och_Sökning;
 
+import java.util.Arrays;
+
 public class Bubbelsortering {
 
     public static void main(String[] args) {
@@ -8,9 +10,11 @@ public class Bubbelsortering {
 
     static void bubbelSortering() {
         int[] osorterad = new int[]{3,7,2,1,0,-34,128,-4,7};    // Osorterad lista
-        System.out.println("Listan innan: " + snyggUtskriftAvElementILista(osorterad));
+        System.out.println("Listan innan sorteringen: " + Arrays.toString(osorterad));
+        System.out.println("...påbörjar sorteringen...");
         int[] sorterad = bubbelSortera(osorterad);              // Sorterad lista
-        System.out.println("Listan efter: " + snyggUtskriftAvElementILista(sorterad));
+        System.out.println("...sorteringen avslutad...");
+        System.out.println("Listan efter sorteringen: " + Arrays.toString(sorterad));
     }
 
 
@@ -28,13 +32,5 @@ public class Bubbelsortering {
 
     }
 
-
-    private static String snyggUtskriftAvElementILista(int[] sorterad) {
-        String utdata = "";
-        for (int i = 0; i < sorterad.length; i++) {
-            utdata += "," + sorterad[i];
-        }
-        return utdata.substring(1);
-    }
 
 }
